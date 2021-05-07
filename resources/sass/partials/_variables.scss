@@ -1,0 +1,87 @@
+//Palette
+    //Brand
+    $brandColor: #002D75;
+    
+    //Secondary
+    $secondaryColor: #B2E5FC;
+
+    // //Neutral
+    // $neutralColor: #FAF7F2;
+
+    // //Support
+    // $supportColor-1: #FAD02C;
+    // $supportColor-2: #80465F;
+    // $supportColor-3: #EB6950;
+    // $supportColor-4: #EF2853;
+
+    //Text
+    $primaryTextColor: #000;
+// /Palette
+
+//Font
+    //Typo
+    $font: 'Open Sans', sans-serif;
+
+    // //Title-size
+    // $headingS: 21px;
+    // $headingM: 26px;
+    // $headingL: 65px;
+    // $headingXL: 90px;
+
+    // //Paragraph-size
+    // $pS: 13px;
+    // $pM: 16px;
+    // $pL: 20px;
+
+    //Font-Weight
+    $fontLight: 300;
+    $fontReg: 400;
+    $fontBold: 600;
+
+// /Font
+
+
+// Define the breakpoints
+$breakpoint-small: 576px;
+$breakpoint-med: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xlg: 1200px;
+$breakpoint-xxlg: 1400px;
+
+@mixin screen($size, $type: min, $pixels: $breakpoint-small) {
+
+  @if $size == 'small' {
+    @media screen and ($type + -width: $breakpoint-small) {
+        @content;
+    }
+  }
+
+  @else if $size == 'med' {
+    @media screen and ($type + -width: $breakpoint-med) {
+        @content;
+    }
+  }
+
+  @else if $size == 'lg' {
+    @media screen and ($type + -width: $breakpoint-lg) {
+        @content;
+    }
+  }
+
+  @else if $size == 'xlg' {
+    @media screen and ($type + -width: $breakpoint-xlg) {
+        @content;
+    }
+  }
+
+  @else if $size == 'xxlg' {
+    @media screen and ($type + -width: $breakpoint-xxlg) {
+        @content;
+    }
+  }
+
+  @else {
+    @content;
+  }
+
+}

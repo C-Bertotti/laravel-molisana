@@ -3,7 +3,71 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    background-color: red;
+//style
+ul {
+    list-style: none;
 }
+
+//container
+.container {
+    width: 85%;
+    margin: 0 auto;
+  
+    //responsive
+    &--s {
+      @include screen(small) {
+        max-width: 500px;
+      }
+      @include screen(med) {
+        width: 80%;
+        max-width: 720px;
+      }
+      @include screen(lg) {
+        max-width: 810px;
+      }
+      @include screen(xlg) {
+        max-width: 745px;
+      }
+      @include screen(xxlg) {
+        max-width: 800px;
+      }
+    }
+  
+    &--l {
+      @include screen(small) {
+        max-width: 560px;
+      }
+      @include screen(med) {
+        width: 80%;
+        max-width: 730px;
+      }
+      @include screen(lg) {
+        max-width: 890px;
+      }
+      @include screen(xlg) {
+        max-width: 1110px;
+      }
+      @include screen(xxlg) {
+        max-width: 1170px;
+      }
+    }
+  
+    &--xl {
+      @include screen(small) {
+        max-width: 650px;
+      }
+      @include screen(med) {
+        width: 85%;
+        max-width: 800px;
+      }
+      @include screen(lg) {
+        max-width: 950px;
+      }
+      @include screen(xlg) {
+        max-width: 1100px;
+      }
+      @include screen(xxlg) {
+        max-width: 1200px;
+      }
+    }
+  }
