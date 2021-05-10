@@ -116,3 +116,18 @@ header .main__nav li a {
 header .main__nav li a.active {
   background-color: #B2E5FC;
 }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.boxes .box {
+  flex-basis: calc((100% / 3) - 20px);
+  margin: 10px;
+}
+.boxes .box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

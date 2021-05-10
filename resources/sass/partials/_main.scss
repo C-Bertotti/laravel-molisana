@@ -1,0 +1,16 @@
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+
+    .box {
+        flex-basis: calc((100% / 3) - 20px);
+        margin: 10px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
