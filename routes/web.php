@@ -43,11 +43,13 @@ Route::get('/ultime-notizie', function () {
     return view('news');
 })->name('news');
 
-Route::get('/prodotto', function () {
+Route::get('/prodotto/{id}', function ($id) {
     $data = config('paste');
 
-    
+    $pasta = $data[$id];
 
+    return view('prodotto', [
+        'pasta' => $pasta
+    ]);
 
-    return view('prodotto');
-})->name('prodotto');
+})->where('id', '[0-9]+')->name('prodotto');

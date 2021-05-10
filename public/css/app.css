@@ -100,7 +100,7 @@ a {
   color: #000;
 }
 
-h1, h2 {
+h1, h2, p {
   color: #002D75;
 }
 
@@ -149,4 +149,16 @@ main .boxes .box img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.product {
+  background-color: #B6DBE4;
+  padding: 50px 0;
+}
+.product h1 {
+  text-align: center;
+}
+.product img {
+  width: 100%;
+  display: block;
 }
