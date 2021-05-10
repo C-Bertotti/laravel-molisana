@@ -6,3 +6,11 @@ a {
     text-decoration: none;
     color: $primaryTextColor;
 }
+
+h1, h2 {
+    color: $brandColor;
+}
+
+h2 {
+    text-transform: uppercase;
+}

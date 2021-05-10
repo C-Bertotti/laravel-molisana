@@ -100,6 +100,14 @@ a {
   color: #000;
 }
 
+h1, h2 {
+  color: #002D75;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
 header {
   text-align: center;
 }
@@ -117,16 +125,25 @@ header .main__nav li a.active {
   background-color: #B2E5FC;
 }
 
-.boxes {
+main {
+  background-image: url("/images/fondo-pag-speciali.jpg");
+  background-size: cover;
+  margin-top: 20px;
+  padding: 50px 0;
+}
+main section:not(:first-of-type) {
+  margin-top: 30px;
+}
+main .boxes {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -10px;
 }
-.boxes .box {
+main .boxes .box {
   flex-basis: calc((100% / 3) - 20px);
   margin: 10px;
 }
-.boxes .box img {
+main .boxes .box img {
   display: block;
   width: 100%;
   height: auto;

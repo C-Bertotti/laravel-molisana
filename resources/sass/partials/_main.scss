@@ -1,16 +1,27 @@
-.boxes {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -10px;
+main {
+    background-image: url("/images/fondo-pag-speciali.jpg");
+    background-size: cover;
+    margin-top: 20px;
+    padding: 50px 0;
 
-    .box {
-        flex-basis: calc((100% / 3) - 20px);
-        margin: 10px;
+    section:not(:first-of-type) {
+        margin-top: 30px;
+    }
 
-        img {
-            display: block;
-            width: 100%;
-            height: auto;
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    
+        .box {
+            flex-basis: calc((100% / 3) - 20px);
+            margin: 10px;
+    
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
         }
     }
 }
