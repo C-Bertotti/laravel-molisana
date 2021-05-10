@@ -1,2 +1,5 @@
     <main>
+
+        {{ dd($paste) }}
+
     </main>
