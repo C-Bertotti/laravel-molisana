@@ -12,7 +12,7 @@
                 <div class="boxes">
                     @foreach($lunga as $pasta)
                     <div class="box">
-                        <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
+                        <a href="prodotto/{{ $pasta['id'] }}"><img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}"></a>
                     </div>
                     @endforeach
                 </div>
@@ -22,7 +22,7 @@
                 <div class="boxes">
                     @foreach($corta as $pasta)
                     <div class="box">
-                        <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
+                        <a href="prodotto/{{ $pasta['id'] }}"><img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}"></a>
                     </div>
                     @endforeach
                 </div>
@@ -32,7 +32,7 @@
                 <div class="boxes">
                     @foreach($cortissima as $pasta)
                     <div class="box">
-                        <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
+                        <a href="prodotto/{{ $pasta['id'] }}"><img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}"></a>
                     </div>
                     @endforeach
                 </div>

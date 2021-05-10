@@ -21,7 +21,10 @@ Route::get('/', function () {
     $corta = [];
     $cortissima = [];
 
-    foreach($data as $pasta) {
+    foreach($data as $key => $pasta) {
+
+        $pasta['id'] = $key;
+
         if( $pasta['tipo'] == 'lunga') {
             $lunga[] = $pasta;
         } elseif( $pasta['tipo'] == 'corta') {
