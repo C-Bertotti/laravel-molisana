@@ -1,5 +1,9 @@
 @extends('layouts.mainLay')
 
+@section('pageTitle')
+    La Molisana
+@endsection
+
 @section('main__content')
     <div class="home__wrapper">
         <div class="container container--l">
