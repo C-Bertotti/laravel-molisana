@@ -1,0 +1,23 @@
+footer {    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .footer__top {
+            padding: 50px 0;
+            flex-basis: calc(100% / 3);
+        }
+
+        p {
+            opacity: 0.5;
+        }
+
+    }
+
+    
+
+
+    .footer__bottom {
+        width: 100%;
+    }
+}

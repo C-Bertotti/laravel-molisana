@@ -100,7 +100,7 @@ a {
   color: #000;
 }
 
-h1, h2, p {
+h1, h2 {
   color: #002D75;
 }
 
@@ -162,4 +162,19 @@ main .boxes .box img {
 .product img {
   width: 100%;
   display: block;
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .container .footer__top {
+  padding: 50px 0;
+  flex-basis: calc(100% / 3);
+}
+footer .container p {
+  opacity: 0.5;
+}
+footer .footer__bottom {
+  width: 100%;
 }
